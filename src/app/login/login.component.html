@@ -1,68 +1,64 @@
-
 <div class="background">
   <div id="loginForm">
-    <img src="../../assets/images/Faves.png" alt="logo" height="80px"  style="
-    width: 100px;
-    height: 105px;"/>
+    <img
+      src="../../assets/images/Faves.png"
+      alt="logo"
+      height="80px"
+      class="image-icon"
+    />
     <h1>Favedom</h1>
     <div style="margin-top: 60px;">
-        <form
-            #userForm="ngForm"
-            (ngSubmit)="
-            confirmUser(
-                    userForm,
-                    userForm.valid
-            )  "
-        >
-        <mat-form-field appearance="standard"  hideRequiredMarker>
-            <mat-label><i class="far fa-user-circle" style="float: left;"></i>Email</mat-label>
-            <!-- <span matPrefix>+1 &nbsp;</span> -->
-            <input
-              matInput
-              required
-              ngModel
-              type="text"
-              name="email"
-              autocomplete="off"
-              #email="ngModel"
-            />
-            <mat-error
-              *ngIf="email.invalid && (email.dirty || email.touched)"
+      <form
+        #userForm="ngForm"
+        (ngSubmit)="confirmUser(userForm, userForm.valid)"
+      >
+        <mat-form-field appearance="standard" hideRequiredMarker>
+          <mat-label
+            ><i class="far fa-user-circle" class="image-left"></i
+            >Email</mat-label
+          >
+          <!-- <span matPrefix>+1 &nbsp;</span> -->
+          <input
+            matInput
+            required
+            ngModel
+            type="text"
+            name="email"
+            autocomplete="off"
+            #email="ngModel"
+          />
+          <mat-error *ngIf="email.invalid && (email.dirty || email.touched)">
+            <mat-error *ngIf="email.errors?.required">
+              Email is <strong>required</strong></mat-error
             >
-              <mat-error *ngIf="email.errors?.required">
-                 Email is <strong>required</strong></mat-error
-              >
-            </mat-error>
-        </mat-form-field><br>
-        <mat-form-field appearance="standard"  hideRequiredMarker>
-            <mat-label><i class="fa fa-lock" style="float:left"></i>Password</mat-label>
-            <!-- <span matPrefix>+1 &nbsp;</span> -->
-            <input
-              matInput
-              required
-              ngModel
-              type="password"
-              name="password"
-              autocomplete="off"
-              #password="ngModel"
-            />
-            <mat-error
-              *ngIf="password.invalid && (password.dirty || password.touched)"
+          </mat-error> </mat-form-field
+        ><br />
+        <mat-form-field appearance="standard" hideRequiredMarker>
+          <mat-label
+            ><i class="fa fa-lock" class="image-left"></i>Password</mat-label
+          >
+          <!-- <span matPrefix>+1 &nbsp;</span> -->
+          <input
+            matInput
+            required
+            ngModel
+            type="password"
+            name="password"
+            autocomplete="off"
+            #password="ngModel"
+          />
+          <mat-error
+            *ngIf="password.invalid && (password.dirty || password.touched)"
+          >
+            <mat-error *ngIf="password.errors?.required">
+              Password is <strong>required</strong></mat-error
             >
-              <mat-error *ngIf="password.errors?.required">
-                 Password is <strong>required</strong></mat-error
-              >
-            </mat-error>
-        </mat-form-field><br>  
-        <p style="font-size: 10px;color: red; text-align: center;" *ngIf="loginDoesNotExit">Invalid Credentials</p>
-      <button mat-stroked-button class="loginBtn">ENTER</button>
-    </form>
-      <a  href="#" style="    color: white;
-      margin-top: 30px;
-      opacity: 0.7;
-      display: block;
-      font-size: 12px;">Forgot password</a>
-      </div>
-     
+          </mat-error> </mat-form-field
+        ><br />
+        <p class="red-text" *ngIf="loginDoesNotExit">Invalid Credentials</p>
+        <button mat-stroked-button class="loginBtn">ENTER</button>
+      </form>
+      <a href="#" class="forgot">Forgot password</a>
     </div>
   </div>
+</div>

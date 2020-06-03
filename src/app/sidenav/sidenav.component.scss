@@ -154,6 +154,39 @@ mat-divider {
   .mat-chip-list-wrapper{
     justify-content: center;
   }
+  .sidenav-list{
+    display:flex;
+    margin-left: 15px;
+  }
+  .sidenav-list-text{
+    margin-right: 7px;
+    height:20px;
+    width:20px; 
+
+  }
+  .livebutton{
+    
+    background-image: linear-gradient(to top right, #5246d7, #872fc0);
+    color: white;
+    flex-grow: 1;
+    text-align: center;
+    border-bottom-left-radius: 6px;
+  }
+  .liveside{
+    text-align: left;
+    background-color: white;
+    flex-grow: 18;
+    border-bottom-right-radius: 6px;
+  }
+  .celebrityName{
+    font-size: 10px;
+    text-align: center;
+    color: grey;
+  }
+  .celebrity-cards-flex{
+    display: flex; 
+    justify-content: center;
+  }
 
   
   

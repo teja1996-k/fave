@@ -6,4 +6,26 @@
     background-repeat: no-repeat;
     background-attachment:fixed;
     background-size: cover;
+    .header-main{
+        padding-top: 40px;
+        display: table;
+        width: 100%;
+    }
+    .header-image1{
+        display:table-cell;
+        padding-left: 10px;
+    }
+    .header-image2{
+        display:table-cell;
+        text-align: center;
+    }
+    .header-image3{
+        display:table-cell;
+        text-align: end;
+        padding-right: 10px;
+    }
+    .image-style{
+        height: 30px;
+        width:30px;
+    }
 }
