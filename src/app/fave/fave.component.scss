@@ -1,0 +1,224 @@
+@import "../../assets/Theme/theming";
+.outer-container {
+    border: 0.5px solid #FC7417;
+    height: 100%;
+    max-width: 450px;
+    background-color: #FC7417;
+  }
+  .bottom-section {
+    background: rgb(245, 244, 241);
+    margin-top: 165px;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    position: relative;
+    padding-top: 16px;
+    margin-bottom: 0px;
+    min-height:485px;
+  }
+  .fave-parent{
+    position: absolute !important;
+    width: 85% !important;
+    left: 50% !important;
+    top: -24px;
+    transform: translateX(-50%);
+    text-align: center;
+
+  }
+  .fave{
+    width: 50%;
+    display: inline-block;
+   padding: 15px 0px;
+   color: #fff;
+   border: transparent;
+   background-image: linear-gradient(to right,rgb(77, 48, 131), #6442e0,rgb(128, 10, 151));
+   // background-image: linear-gradient(to right,#42044e rgb(128, 48, 231));
+  }
+  .count {
+   width: 50%;
+   border: transparent;
+   display: inline-block;
+  //  height: 40px;
+   background-color: white;
+  //  padding: 18px 0px;
+  padding-top: 18px;
+    padding-bottom: 6px;
+
+  }
+  .icon {
+     height: 20px;
+     width: 20px; 
+     
+     margin-right: 5px;
+  }
+  .bottom-content {
+    display: inline-block;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+  }
+
+.closeBtn {
+  color: white;
+  position: absolute;
+  top: 0;
+  right: 0;
+  // float: right;
+  .mat-icon {
+    font-weight: 900;
+    margin-top: 15px;
+    margin-right: 15px;
+  }
+}
+
+.content {
+   margin-top: 30px;
+  text-align: center;
+  max-width: 450px;
+  background-color: rgb(245, 244, 241);
+  .signupBtn {
+    width: 70%;
+    max-width: 400px;
+    @include btnStyle(14, 14, 23, 23, #42044e, white, 30);
+    border-color: #42044e;
+    //  margin-top: 20px;
+     margin-bottom: 0px;
+  }
+ 
+  .mat-tab-labels{
+    display: block !important;
+    color: grey
+  }
+  .mat-tab-label-active{
+    color: #FC7417 !important;
+  }
+  .mat-ink-bar{
+    background-color: #FC7417 !important;
+  }
+  .schedule-contet {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    // height:700px
+    max-width: 400px;
+  }
+  .mat-tab-group {
+    height: 350px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .darktext{
+    color:#000;
+    float:left;
+    margin-left: 10px;
+    font-size: 14px;
+    text-align: left;
+    height: 18px;
+    width: 100%;
+    margin-top: 10px;
+  }
+  .text{
+    color:grey;
+    float:left;
+    width: 100%;
+    margin-left: 10px;
+    text-align: left;
+    height: 18px;
+    font-size: 14px;   
+  }
+  .heading{
+    color:#000;
+    float:left;
+    font-style: bold;
+    width: 100%;
+    font-size: 18px;
+    margin-left: 10px;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  .btn{
+    background-image: linear-gradient(to right,red, rgb(255, 102, 0));
+    margin-right: 10px;
+    width: 90px;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 60px;
+    color: #fff;
+    border:transparent;
+    border-radius: 6px;
+    outline: none;
+
+  }
+  btn:active{
+    background-color: rgb(47, 12, 175) ;
+}
+  .selected-btn{
+    // float: right;
+    margin-right: 10px;
+    width: 90px;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 60px;
+    background-color: rgb(47, 12, 175) ;
+    color: #fff;
+    border:transparent;
+    border-radius: 6px;
+    outline: none;
+  }
+  .details-parent {
+    max-width:  400px;
+    margin-top: 40px;
+    display: inline-flex;
+  }
+
+  .details{
+    max-width: 150px;
+  }
+  .mainparent{
+    background-color: #FC7417;
+    // height: 700px;
+    max-width: 450px;
+    top: 0;
+    left: 0;
+  }
+
+
+}
+.mat-dialog-container{
+  border-radius: 20px !important;
+  width: 300px !important;
+  height: 320px !important;
+ }
+ .text-dialog-1{
+  color: #000;
+  text-align: center; 
+  font-size: 14px;
+ }
+ .text-dialog-2{
+   margin-top: 10px;
+  color: #000;
+  text-align: left; 
+  float: left;
+  font-size: 14px;
+ }
+ .heading-dialog{
+  color:#000;
+  font-size: 16px;
+  font-style: bold;
+  text-align: center;
+}
+.center-dialog{
+  color:#000;
+  text-align: center;
+  font-size: 14px;
+
+}
+ .mat-button{
+color: #245bff !important;
+ }
+ .mat-dialog-actions {
+   text-align: center !important;
+   margin-left: 30px !important;
+ }
+
+
+  
+ 
+  

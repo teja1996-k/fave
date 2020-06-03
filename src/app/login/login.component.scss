@@ -1,0 +1,17 @@
+@import "../../assets/Theme/background";
+
+#loginForm{
+    // margin: 20% auto;
+    padding-top: 80px;
+    button {
+        margin: 5% auto;
+      }
+    .loginBtn {
+        width: 80%;
+
+    
+        max-width: 400px;
+        @include btnStyle(16, 12, 20, 20,#ff696d, white, 30,20);
+      }
+    
+}

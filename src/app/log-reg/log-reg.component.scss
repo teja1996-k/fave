@@ -1,0 +1,41 @@
+@import "../../assets/Theme/background";
+
+#log-register {
+  // margin: 20% auto;
+  .mat-divider {
+    display: block;
+    margin: 0 auto;
+    width: 30%;
+    border-top-color: white;
+  }
+  padding-top: 80px;
+
+  .loginBtn {
+      width: 80%;
+
+  
+      max-width: 400px;
+      @include btnStyle(16, 12, 20, 20,#ff696d, white, 30,20);
+    }
+  // button {
+  //   margin: 5% auto;
+  // }
+  // .login{
+  //   padding: 22px !important ;
+
+  // }
+  .secondaryBtn {
+    width: 80%;
+    max-width: 400px;
+    @include btnStyle(16, 12, 20, 20,white,none, 30,20);
+  }
+  .register{
+      border-color: white;
+  }
+  button {
+    margin: 5% auto;
+  }
+
+}
+
+

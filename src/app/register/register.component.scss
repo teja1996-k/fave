@@ -1,0 +1,21 @@
+@import "../../assets/Theme/background";
+
+#registerBtn {
+  // margin: 20% auto;
+  padding-top: 80px;
+  button {
+    margin: 5% auto;
+  }
+  .normal{
+    padding: 22px !important ;
+
+  }
+  .googleBtn {
+    color: black;
+    letter-spacing: 0.5px;
+  }
+  .fbBtn {
+    color: blue;
+    letter-spacing: 0.5px;
+  }
+}

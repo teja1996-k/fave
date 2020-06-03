@@ -1,0 +1,37 @@
+<div class="background">
+  <div id="registerBtn">
+  <img src="../../assets/images/Faves.png" alt="logo" height="80px" style="height: 105px;weight:100px"/>
+  <h1>Favedom</h1>
+  <mat-divider class="top-divder"></mat-divider>
+  <p>Your once in a lifetime moment starts now.</p>
+  <mat-divider class="bottom-divder"></mat-divider>
+
+  <div>
+    <button mat-stroked-button class="primaryBtn normal" (click)="submit()">REGISTER WITH EMAIL</button>
+    <a [href]="googleUrl">
+    <button mat-stroked-button class="primaryBtn googleBtn">
+      <img
+        src="https://cdn4.iconfinder.com/data/icons/new-google-logo-2015/400/new-google-favicon-512.png"
+        alt="google"
+        height="25px"
+        style="padding-right: 10px;"
+      />
+      Sign in with Google
+    </button>
+    </a>
+    
+    <a [href]="facebookUrl">
+    <button mat-stroked-button class="primaryBtn fbBtn">
+      <img
+        src="https://cdn3.iconfinder.com/data/icons/capsocial-round/500/facebook-512.png"
+        alt="facebook"
+        height="25px"
+        style="padding-right: 10px;"
+      
+      />
+      Login with Facebook
+    </button>
+    </a>
+  </div>
+  </div>
+</div>

@@ -1,0 +1,132 @@
+// @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@700&display=swap");
+
+// ==================== VARIABLES ================== //
+
+// Colors
+$blue: #0caae4;
+$darkBlue: #07243b;
+$fadeBlue: #245bff;
+$black: #000000;
+$lightGrey: #9d9d9d;
+$lightWhite: #f2f2f2;
+
+// Font
+$primaryFont: "Nunito Sans", sans-serif;
+
+// ===================== MIXINS ====================== //
+
+// Text Styling
+@mixin textStyle(
+  $font,
+  $color: transparent,
+  $weight: normal,
+  $bgColor: transparent
+) {
+  background-color: $bgColor;
+  height: #{$font}px;
+  font-family: $primaryFont;
+  font-style: normal;
+  font-weight: $weight;
+  font-size: #{$font}px;
+  line-height: #{$font}px;
+  color: $color;
+  margin: 0;
+}
+
+// Button Styling
+@mixin btnStyle(
+  $font,
+  $height,
+  $px,
+  $py,
+  $color,
+  $bgColor,
+  $borderRadius: 8, // $borderColor,
+    // $hoverColor,
+    // $hoverBg,
+  $marginTop:0
+) {
+  display: block;
+  margin: #{$marginTop}px auto  0 auto ;
+  font-family: $primaryFont !important;
+  font-style: normal !important;
+  font-weight: 900 !important;
+  font-size: #{$font}px !important;
+  line-height: #{$height}px !important;
+  padding: #{$py}px #{$px}px !important;
+  text-align: center;
+  letter-spacing: 2px;
+  // border: none !important;
+  box-sizing: border-box;
+  border-radius: #{$borderRadius}px;
+  color: $color;
+  background-color: $bgColor;
+  // &:hover {
+  //   color: $hoverColor !important;
+  //   border: 1px solid $hoverBg !important;
+  //   background-color: $hoverBg !important;
+  //   box-shadow: 0px 8px 16px rgba(0, 126, 255, 0.16);
+  // }
+}
+
+//textfield styling
+.mat-form-field{
+  width: 75%;
+  text-align: center !important;
+  max-width:300px;
+  font-family: $primaryFont;
+ 
+  .mat-form-field-label {
+    color: white;
+    font-size: 12px;
+    opacity: 0.5;
+  }
+}
+.mat-form-field-appearance-standard .mat-form-field-underline{
+  background-color: white;
+  opacity: 0.7;
+}
+.mat-form-field-subscript-wrapper{
+  text-align: left;
+}
+
+.mat-form-field-infix {
+  padding: 0.8em 0;
+  padding-top: 0;
+  border-top: none;
+  /* border-top: .84375em solid transparent; */
+}
+.mat-input-element{
+  opacity: 0.7;
+}
+
+.mat-form-field.mat-focused {
+  .mat-form-field-label {
+    color: white;
+    letter-spacing: 1px;
+  }
+  .mat-form-field-ripple {
+    background-color: rgba($color: white, $alpha: 0.99);
+  }
+  .mat-form-field-required-marker {
+    color: red;
+  }
+  .mat-input-element {
+    color: white;
+    font-style: normal;
+    font-weight: 500;
+  
+  }
+}
+.mat-form-field-can-float.mat-form-field-should-float 
+.mat-form-field-label, 
+.mat-form-field-can-float 
+.mat-input-server:focus+.mat-form-field-label-wrapper .mat-form-field-label{
+  letter-spacing: 2px;
+}
+
+.mat-h5, .mat-typography h5{
+  font-family: $primaryFont;
+  color: white;
+}

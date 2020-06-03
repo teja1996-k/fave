@@ -1,0 +1,37 @@
+<div class="outer-container" *ngIf="celebrity">
+    <p style="color: white;position: absolute;left: 0;top: 110px;">{{celebrity[0]['node']['firstName']}} {{celebrity[0]['node']['lastName']}}</p>
+    <div class="bottom-section">
+        <div class="fave-parent">
+            <div (click)="openDialog()" class="fave">
+                <img src="../../assets/images/Faves1.png" class="icon"> 
+                <span>Fave</span>
+            </div>
+            <div class="count"><p *ngIf="celebrity[0]['node']['fanCount']==null">0</p><p *ngIf="celebrity[0]['node']['fanCount']"> celebrity[0]['node']['fanCount']</p></div>
+        </div>
+        <div class="content">
+
+            <mat-tab-group>
+                <mat-tab label="Feed"> Content 1 </mat-tab>
+                <mat-tab label="Schedule">
+                    <div class="schedule-contet column">
+                        <p class="heading">Upcoming Events</p>
+                        <div class="details-parent row" *ngFor="let detail of details;let index = index">
+                            <div class="details">
+                                <span class="text">{{detail.date}}</span>
+                                <span class="darktext">{{detail.name}}</span>
+                                <span class="text">{{detail.duration}}</span>
+                            </div>
+                            <div>
+                            <button class="btn">sign up </button>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </mat-tab>
+            </mat-tab-group>
+            <button mat-stroked-button class="signupBtn">REQUEST AN EVENT</button>
+            <button (click)="back()">Back</button>
+        </div>
+    </div>
+</div>

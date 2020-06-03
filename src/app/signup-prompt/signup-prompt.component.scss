@@ -1,0 +1,48 @@
+@import "../../assets/Theme/theming";
+.closeBtn {
+  color: white;
+  position: absolute;
+  top: 0;
+  right: 0;
+  // float: right;
+  .mat-icon {
+    font-weight: 900;
+    margin-top: 15px;
+    margin-right: 15px;
+  }
+}
+
+.content {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  color: white;
+  text-align: center;
+  .signupBtn {
+    width: 70%;
+    max-width: 400px;
+    @include btnStyle(14, 14, 23, 23, #ff696d, white, 30);
+    margin-top: 30px;
+    margin-bottom: 12px;
+  }
+
+  mat-divider {
+    margin-top: 15px !important;
+    margin-bottom: 15px !important;
+  }
+
+  .mat-divider {
+    display: block;
+    margin: 0 auto;
+    width: 30%;
+    border-top-color: white;
+  }
+  .caption {
+    text-decoration: underline;
+  }
+}
+
+.mat-h1,
+.mat-headline,
+.mat-typography h1 {
+  margin: 0;
+}

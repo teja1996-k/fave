@@ -1,0 +1,8 @@
+{
+    "http://api.favedom-graphql-query-pr-5.favedom-dev.softcannery.com/query/graphql": {
+        "target": "http://api.favedom-graphql-query-pr-5.favedom-dev.softcannery.com/query/graphql",
+        "secure": false,
+        "logLevel": "debug",
+        "changeOrigin": true
+    }
+}

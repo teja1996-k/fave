@@ -1,0 +1,9 @@
+{
+  "images": {
+    "favedom": "assets/images/Faves.png"
+  },
+  "apiEndpoints": {
+    "baseURL1": "http://52.186.122.44:9990/admin/1.0.0",
+    "baseURL": "http://172.16.0.45:9990/admin/1.0.0"
+  }
+}

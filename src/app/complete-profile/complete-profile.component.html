@@ -1,0 +1,100 @@
+<div class="background">
+    <div id="complete-profile">
+        <img src="../../assets/images/Faves.png" alt="logo" height="80px" style="
+        width: 40px;
+        height: 45px;"/>
+        <h4>Please complete your profile</h4>
+        <form  #userForm="ngForm"
+        (ngSubmit)="
+        confirmUser(
+                userForm,
+                userForm.valid
+        )  ">
+          <mat-form-field appearance="standard"  hideRequiredMarker>
+            <mat-label>FIRST NAME</mat-label>
+            <!-- <span matPrefix>+1 &nbsp;</span> -->
+            <input
+              matInput
+              required
+              [ngModel]="refirstName"
+              type="text"
+              name="firstName"
+              autocomplete="off"
+              #firstName="ngModel"
+            />
+            <mat-error
+              *ngIf="firstName.invalid && (firstName.dirty || firstName.touched)"
+            >
+              <mat-error *ngIf="firstName.errors?.required">
+                 First Name is <strong>required</strong></mat-error
+              >
+            </mat-error>
+        </mat-form-field><br>
+        <mat-form-field appearance="standard"  hideRequiredMarker>
+            <mat-label>LAST NAME</mat-label>
+            <!-- <span matPrefix>+1 &nbsp;</span> -->
+            <input
+              matInput
+              required
+              [ngModel]="relastName"
+              type="text"
+              name="lastName"
+              autocomplete="off"
+              #lastName="ngModel"
+            />
+            <mat-error
+              *ngIf="lastName.invalid && (lastName.dirty || lastName.touched)"
+            >
+              <mat-error *ngIf="lastName.errors?.required">
+                 Last Name is <strong>required</strong></mat-error
+              >
+            </mat-error>
+        </mat-form-field><br>
+        <mat-form-field appearance="standard"  hideRequiredMarker>
+            <mat-label>EMAIL</mat-label>
+            <!-- <span matPrefix>+1 &nbsp;</span> -->
+            <input
+              matInput
+              required
+              [ngModel]="reEmail"
+              type="text"
+              name="email"
+              autocomplete="off"
+              #email="ngModel"
+            />
+            <mat-error
+              *ngIf="email.invalid && (email.dirty || email.touched)"
+            >
+              <mat-error *ngIf="email.errors?.required">
+                 Email is <strong>required</strong></mat-error
+              >
+            </mat-error>
+        </mat-form-field><br>
+        <mat-form-field appearance="standard"  hideRequiredMarker>
+            <mat-label>PHONE NUMBER</mat-label>
+            <!-- <span matPrefix>+1 &nbsp;</span> -->
+            <input
+              matInput
+              required
+              [ngModel]="rephonenumber"
+              type="number"
+              name="phonenumber"
+              autocomplete="off"
+              #phonenumber="ngModel"
+            />
+            <mat-error
+              *ngIf="phonenumber.invalid && (phonenumber.dirty || phonenumber.touched)"
+            >
+              <mat-error *ngIf="phonenumber.errors?.required">
+                 phone number is <strong>required</strong></mat-error
+              >
+            </mat-error>
+        </mat-form-field><br>
+        
+        <mat-checkbox [disableRipple]="true">I agree to receive news, updates and offers via email from Favedom and partners</mat-checkbox>
+       <p    style="color: red;font-size: 10px;text-align: center;"    *ngIf="userAlreadyExists">User Already Exists</p>
+        <button mat-stroked-button class="profile-data">SUBMIT</button>
+        </form>
+    </div>
+
+</div>

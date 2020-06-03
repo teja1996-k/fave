@@ -1,0 +1,13 @@
+.back-image{
+background-image: linear-gradient(to bottom left, #f89e33, #ff696d);
+}
+.dot {
+    height: 135px;
+    width: 135px;
+    margin-top: 20px;
+    // border: 1px solid #f89e33;
+    background-image: linear-gradient(to bottom left, #ffc371, #fa4627);
+    opacity: 0.2;
+    border-radius: 50%;
+    display: inline-block;
+  }
